@@ -92,11 +92,22 @@ font-size: 1.2rem;
 margin-bottom: 15px;
 }
 
-#typewriter{
-font-size: 6rem;
-line-height: 1;
-font-weight: 800;
-margin-bottom: 25px;
+.heading{
+    font-size: 2.6rem;
+    white-space: nowrap;
+}
+
+.cursor{
+    display: inline-block;
+    margin-left: 2px;
+    color: var(--primary);
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50%{
+        opacity: 0;
+    }
 }
 
 .roles{
